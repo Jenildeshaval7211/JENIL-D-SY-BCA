@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void show() {
-    double x, y;
+int main() {
+    int x, y;
     char op;
 
     cout << "Enter First Number: ";
@@ -14,49 +14,24 @@ void show() {
 
 if(op == '+')
 {
-	
+   cout<<x+y;	
 }
 else if(op == '-')
 {
-	
+	cout<<x-y;
 }
 else if(op == '*')
 {
-	
+	cout<<x*y;
 }
 else if(op == '/')
 {
-	
+	if(y!=0){
+	cout<<x/y;
+	}
+	else{cout<<"error";}
 }
-else
-{
-	
-}
-    switch (op) {
-        case '+':
-            cout << "Addition: " << x + y << "\n";
-            break;
-
-        case '-':
-            cout << "Subtraction: " << x - y << "\n";
-            break;
-
-        case '*':
-            cout << "Multiplication: " << x * y << "\n";
-            break;
-
-        case '/':
-            if (y != 0) {
-                cout << "Division: " << x / y << "\n";
-            } else {
-                cout << "Invalid second number (division by zero)\n";
-            }
-            break;
-
-            
-        default:
-            cout << "Invalid operator entered.\n";
-    }
+ return 0;
 }
 
 
